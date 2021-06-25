@@ -1,15 +1,14 @@
-import { useState } from "react";
+import { ButtonHTMLAttributes } from "react";
 
-/* type ButtonProps = {
-  text?: String;
-}; */
-export function Button() {
-  const [counter, setCounter] = useState(0);
+import "../styles/button.scss";
 
-  function increment() {
-    setCounter(counter + 1);
-  }
-  return <button onClick={increment}>{counter}</button>;
+type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
+export function Button(props: ButtonProps) {
+  // todas as propriedades que eu receber, vou repassar para **
+
+  return (
+    <button className="button" {...props} /> // ** este botão aqui
+  ); //spread operator para distribuir cada propriedade do botão
 }
 
 // export default Button;

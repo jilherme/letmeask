@@ -1,0 +1,9 @@
+export { default as illustrationImg } from "./illustration.svg";
+export { default as logoImg } from "./logo.svg";
+export { default as answerImg } from "./answer.svg";
+export { default as checkImg } from "./check.svg";
+export { default as copyImg } from "./copy.svg";
+export { default as deleteImg } from "./delete.svg";
+export { default as emptyQuestionsImg } from "./empty-questions.svg";
+export { default as googleImg } from "./google-icon.svg";
+export { default as likeImg } from "./like.svg";
